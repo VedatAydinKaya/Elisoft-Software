@@ -1,0 +1,98 @@
+
+/* .bg-danger{ background-color:chocolate   !important;}     Kendi Css ifademize baskın bir ifade kullandık */
+
+/*  Dark Background*/ 
+
+.dark-bg{ background-image: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)), url('../img/main_bg.jpg');
+
+ background-size: cover;
+
+background-position:center center;
+
+background-attachment: fixed;
+
+}
+
+#hero .container{ height: 50vh;}
+
+.generic{ padding: 100px 0;}
+
+
+/*  Latest Section */ 
+
+section#latest .latest-item img{ 
+
+    min-height: 100%;       /* Butona verilecek yükseklikten sonra img elementinin height ve width değerleri
+                             bu ifade ile butona verilecek yüksekliğe göre şekillenecek  */ 
+    width: 100%;
+}
+
+section#latest button
+{
+    max-height: 250px;
+    padding: 0;
+    overflow: hidden;
+     box-shadow: none;
+
+}
+section#latest .latest-item{
+    
+    position: relative;
+}
+
+section#latest .latest-item:hover .overlay
+
+{  opacity: 1; background-color: rgba(189,61,75,.9);
+   
+
+}
+
+section#latest .latest-item:hover i{
+
+    opacity: 1; 
+    transform: none;
+}
+
+section#latest .latest-item .overlay
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+     background-color: rgba(189,61,75,1);
+
+     opacity: 0.5;
+
+     color:#fff;
+
+     transition: all .5s;
+}
+
+section#latest .latest-item .overlay i
+{
+    transform: translateY(20px);
+    transition: all .5s;
+    opacity: .9;
+    font-size: 2rem;
+}
+
+section#contact .container .input-group input, section#contact .container .input-group textarea{ box-shadow: none;}
+
+@media (max-width: 767.98px)
+{
+
+
+    #hero p.lead
+    { 
+        font-size: 10px; color: yellow;
+     }
+
+     #hero h1.display-1 span{ font-size: 150px; color:seagreen}; 
+
+    
+
+}
+
+
+
